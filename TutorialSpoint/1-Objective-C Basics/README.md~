@@ -18,7 +18,7 @@ File implementation ```MyClass.vn``` sẽ như sau:
 @implementation MyClass
 	// class methods defined here
 @end
-
+```
 ##### Khởi tạo đối tượng
 ```java
 MyClass *objectName = [[MyClass alloc]init];
@@ -120,7 +120,18 @@ NSArray * aImmutableArray = [[NSArray] initWithObjects : @"first object", nil];
 
 #####Dictionary
 
-NSMutableDictionary và NSdic
+NSMutableDictionary và NSDictionary là các lớp dictionary được sử dụng trong objective C. 
+```java
+NSMutableDictionary *aMutableDictionary = [[NSMutableArray alloc]init];
+[aMutableDiction setObject : @"fist object" forKey : @"thisKey"];
+
+NSDictionary *aImmutableDictionary = [
+	[NSDictionary alloc] initWithObjects : 
+	[NSArray arrayWithObjects : @"value", nil] forKeys : [NSArray arrayWithObjects : @"aKey"]
+];
+```
+
+
 
 
 

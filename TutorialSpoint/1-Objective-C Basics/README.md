@@ -1,10 +1,11 @@
 Ngôn ngữ Objective C được sử dụng để phát triển ứng dụng iOS. Nó là một ngôn ngữ lập trình hướng đối tượng, nó có thể rất dễ năm bắt với ai đã có nền tảng về Lập trình hướng đối tượng.
 
-#####Interface and Implementation
+<br/>
+###Interface and Implementation
 
 Trong Objective C, file khai báo một lớp gọi là interface file và file mà định nghĩa một lớp gọi là implementation file.
 Ví dụ về interface file ```MyClass.h``` trông như sau:
-```java
+```php
 @interface MyClass:NSObject {
     // class variable declared here
 }
@@ -14,91 +15,102 @@ Ví dụ về interface file ```MyClass.h``` trông như sau:
 ```
 
 File implementation ```MyClass.vn``` sẽ như sau:
-```java
+```Objective-C
 @implementation MyClass
 	// class methods defined here
 @end
-
-##### Khởi tạo đối tượng
-```java
+```
+#### Khởi tạo đối tượng
+```Objective-C
 MyClass *objectName = [[MyClass alloc]init];
 ```
 
-##### Phương thức
+<br/>
+### Phương thức
 Phương thức được khai báo trong Objective C như sau:
-```java
+```Objective-C
 -(returnType)methodName : (typeName) variable1 : (typeName) variable2;
 ```
 Ví dụ:
-```java
+```Objective-C
 -(void)calculateAreaForRectangleWithLength : (GCfloat) lengthAndBreadth : (GCfloat) breadth;
 ```
 Bạn cũng có thể sửa lại kiểu float ở trên sang String.
 Để gọi phương thức trên trong cùng một class, chúng ta làm như sau:
-```java
+```Objective-C
 [self calculateAreaForRectangleWithLength:30 andBreadth:20]
-
+```
 ```self``` được sử dụng như từ khóa ```this```.
 
-#####Class Methods
+<br/>
+###Class Methods
 Các phương thức cũng có thể truy cập trực tiếp mà không cần khởi tạo đối tượng. Chúng không có bất kỳ variables và đối tượng liên quan với nó.
 Một ví dụ:
-```java
+```Objective-C
 +(void)simpleClassMethod;
 ```
 Nó có thể được truy cập bằng cách sử dụng class name:
-```java
+```Objective-C
 [MyClass simpleClassMethod];
 ```
 
-#####Instance Methods
+<br/>
+###Instance Methods
 
 Instance methods chỉ có thể được truy cập sau khi khởi tạo một đối tượng cho lớp đó. Bộ nhớ được cấp phát cho các instance variable.
 
-```java
+```Objective-C
 -(void) simpleInstanceMethod;
 ```
 
 Nó có thể được truy cập sau khi khởi tạo một đối tượng cho class như sau:
-```java
+```Objective-C
 MyClass *objectName = [[MyClass alloc]init];
 [objectname simpleInstanceMethod];
 ```
-#####Các kiểu dữ liệu quan trọng trong Objective C
+
+<br/>
+###Các kiểu dữ liệu quan trọng trong Objective C
 - NSString 
 - NSfloat
 - NSInteger
 - BOOL
 
-##### Hiển thị Logs
+<br/>
+### Hiển thị Logs
 NSLog - sử dụng để in log. ví dụ,
-```java
+```Objective-C
 NSLog(@"trước một chuỗi phải có @");
 ```
 
-##### Control Structures
+<br/>
+### Control Structures
 Hầu hết control structures cũng tương tự như trong C và C++.
 
-##### Properties
+<br/>
+### Properties
 
 For an external class to access the class, variable properties are used. For example,
-```java
+```Objective-C
 @property(nonatomic, strong) NSString *myString;
 ```
 
-##### Accessing Properties
+<br/>
+### Accessing Properties
 Bạn cũng có thể dùng dấu ```.``` để truy cập các thuộc tính:
-```java
+```Objective-C
 self.myString = @"chuỗi test";
 ```
 Bạn cũng có thể sử dụng cách sau:
-```java
+```Objective-C
 [self setMyString:@"Test"];
 ```
-##### Categories
+
+<br/>
+### Categories
 Categories được sử dụng để add các methods vào class có sẵn. Bằng cách này, chúng ta có thể thêm phương thức tới các class mà thậm chí chúng ta không có file implementation.
 
-```java
+```Objective-C
 @interface MyClass(cútomAdditions)
 - (void) sampleCategoryMethod;
 @end
@@ -109,16 +121,17 @@ Categories được sử dụng để add các methods vào class có sẵn. B�
 	NSLog(@"Dòng này chỉ là để test category");	
 };
 ```
-##### Arrays
+<br/>
+### Arrays
 NSMutableArray và NSArray là các class mảng được sử dụng trong objective C. Đúng như tên gọi của nó, NSMutableArray là mảng động, với NSArray, NSSet bạn không thể dynamically add hoặc remove các item.
-```java
+```Objective-C
 NSMutableArray *aMutableArray = [[NSMutableArray alloc]init];
 [anArray addObject : @"first object"];
 
 NSArray * aImmutableArray = [[NSArray] initWithObjects : @"first object", nil];
 ```
-
-#####Dictionary
+<br/>
+###Dictionary
 
 NSMutableDictionary và NSDictionary là các lớp dictionary được sử dụng trong objective C. 
 ```java
@@ -130,25 +143,4 @@ NSDictionary *aImmutableDictionary = [
 	[NSArray arrayWithObjects : @"value", nil] forKeys : [NSArray arrayWithObjects : @"aKey"]
 ];
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
