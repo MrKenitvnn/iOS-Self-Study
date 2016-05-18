@@ -1,0 +1,98 @@
+####NSArray
+<p>
+. NSObject<br/>
+|__. NSArray
+</p>
+
+NSArray creates static array.
+
+#####Khởi tạo mảng
+Mảng có thể khởi tạo bằng 2 cách: @[], [NSArray arrayWithObjects : ...];
+
+```Objective-C
+NSArray *arrNames = @[@"Joe", @"Sanj", @"Mozaa", @"DeGea"];
+```
+hoặc
+```Objective-C
+NSArray *arrObjects = [NSArray arrayWithObjects : someObject, someString, someValue, someNumber, nil];
+```
+
+#####Duyệt mảng
+```Objective-C
+for (NSString *item in arrNames) {
+    NSLog(@"%@", item);
+}
+
+// hoặc
+
+for (int i=0; i<[arrNames count]; i++) {
+    NSLog(@"%d: %@", i, arrNames[i]);
+}
+```
+
+
+####NSCountedSet
+
+
+
+####NSDictionary
+
+
+
+####NSEnumrator
+
+
+
+####NSHashTable
+
+
+
+
+####NSIndexPath
+
+
+
+
+####NSIndexSet
+
+
+
+
+####NSMapTable
+
+
+
+####NSMutableArray
+<p>
+. NSObject<br/>
+|__. NSArray<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|__. NSMutableArray
+     
+</p>
+
+
+
+
+
+
+####NSMutableDictionary
+
+
+
+####NSMutableIndexSet
+
+
+
+####NSMutableSet
+
+
+
+####NSPointerArray
+
+
+
+####NSPointerFunctions
+
+
+
+####NSSet
