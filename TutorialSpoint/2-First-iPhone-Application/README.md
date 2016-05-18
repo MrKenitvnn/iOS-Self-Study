@@ -99,7 +99,8 @@ Bạn sẽ thấy 5 tập tin khác nhau được generate cho ứng dụng củ
 @implementation AppDelegate
 
 // method to intimate us that the application launched successfully
-- (BOOL) application : (UIApplication *)applicationDidFinishLaunchingWithOptions : (NSDictionary *) launchOptions {
+- (BOOL) application : (UIApplication *)applicationDidFinishLaunchingWithOptions 
+                     : (NSDictionary *) launchOptions {
     self.window = [[UIWindow alloc] initWithFrame : [[UIScreen mainScreen] bounds]];
     
     // Override point for customization after application launch.
@@ -111,23 +112,29 @@ Bạn sẽ thấy 5 tập tin khác nhau được generate cho ứng dụng củ
 }
 
 - (void) applicationWillResignActive:(UIApplication *) application {
-   /* Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. If your application supports background excution, this method is called instead of applicationWillTerminater : when the user quits. */
+   /* Use this method to release shared resources, save user data, invalidate timers, 
+   and store enough application state information to restore your application to its current state in case it is terminated later. 
+   If your application supports background excution, this method is called instead of applicationWillTerminater : when the user quits. */
 }
 
 - (void) applicationWillEnterForeground:(UIApplication *) application {
-   /* Called as part of the transition from the background to the inactive state.Here you can undo many of the changes made on entering the background. */
+   /* Called as part of the transition from the background to the inactive state.
+   Here you can undo many of the changes made on entering the background. */
 }
 
 - (void) applicationDidBecomActive:(UIApplication *) application {
-   /* Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface. */
+   /* Restart any tasks that were paused (or not yet started) while the application was inactive.
+   If the application was previously in the background, optionally refresh the user interface. */
 }
 
 - (void) applicationWillTerminate:(UIApplication *) application {
-   /* Called when the application is about to terminate. Save data if appropiate. See alse applicationDidEnterBackground. */
+   /* Called when the application is about to terminate. Save data if appropiate.
+   See alse applicationDidEnterBackground. */
 }
 
 - (void) applicationWillTerminate:(UIApplication *) application {
-   /* Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground.*/
+   /* Called when the application is about to terminate. Save data if appropriate.
+   See also applicationDidEnterBackground.*/
 }
 
 @end
