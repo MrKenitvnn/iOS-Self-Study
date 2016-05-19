@@ -1,6 +1,6 @@
 
 ###Protocol
-giống với Interface của Java. Protocol khai báo các method nhưng không thực hiện, các method này sẽ được thực hiện trong một class khác.
+Giống với Interface của Java. Protocol khai báo các method nhưng không thực hiện, các method này sẽ được thực hiện trong một class khác.
 
 
 
@@ -68,10 +68,70 @@ Dùng để thực hiện callback. Delegate tuân theo một Protocol sẽ th�
 
 
 ```Objective-C
-//Khai báo delegate, có kiểu id và tuân theo LuatDuongBo
-@property (nonatomic, assign) id <LuatDuongBo> delegate;
+// SamleProtocolDelegate.h
+
+#import <Foundation/Foundation.h>
+
+@protocol SampleProtocolDelegate <NSObject>
+    @required
+    - (void) processCompleted;
+@end
+
+
+@interface SampleProtocolDelegate : NSObject {
+    id <SampleProtocolDelegate> _delegate;
+}
+
+@property (nonatomic, strong) id delegate;
+    - (void) startSampleProcess;
+@end
 ```
 
+
+```Objective-C
+// SamleProtocolDelegate.m
+
+#import "SampleProtocolDelegate.h"
+
+@implementation SampleProtocolDelegate
+
+- (void) startSampleProcess {
+    [NSTimer scheduledTimerWithTimeInterval : 30.0
+             target : self.delegate
+             selector : @selector(processCompled)
+             userInfo : nil
+             repeats : NO];
+}
+
+@end
+```
+
+Sử dụng Delegate trong ViewController
+
+```Objective-C
+@implementation ViewController
+
+- (void) viewDidLoad {
+    [super viewDidLoad];
+
+    SampleProtocolDelegate *samplePD = [[SampleProtocolDelegate alloc] init];
+    samplePD.delegate = self;
+    [labelProcess setText : @"Processing.."];
+    [samplePD startSampleProcess];
+}
+
+- (void) didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - Sample protocol delegate
+
+- (void) processCompleted {
+    [labelProcess setText : @"Process Complete."];
+}
+
+@end
+```
 
 
 
