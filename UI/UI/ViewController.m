@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+@synthesize controller;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,12 +56,32 @@
 
 
 #pragma Slider - giống cái Progressbar trong Android
-- (IBAction)onSliderPriceChanged:(id)sender {
+- (IBAction) onSliderPriceChanged: (id)sender {
     float newStep = roundf((sliderPrice.value) / stepValue);
     sliderPrice.value = newStep * stepValue;
     NSLog(@"number: %@", sliderArray[ (int)sliderPrice.value]);
 
 }
+
+- (IBAction) onButtonNightClick: (id)sender {
+    mTextView.backgroundColor = [UIColor blackColor];
+    mTextView.textColor = [UIColor yellowColor];
+}
+
+- (IBAction) onButtonDayClick: (id)sender {
+    mTextView.backgroundColor = [UIColor whiteColor];
+    mTextView.textColor = [UIColor blackColor];
+}
+
+- (IBAction)onButtonNextClick:(id)sender {
+    self.controller =[[View2ViewController alloc] init];
+   [self presentViewController:controller animated:YES completion:nil];
+    
+}
+
+
+
+
 
 
 @end

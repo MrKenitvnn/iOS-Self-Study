@@ -14,6 +14,9 @@
 		BE2A342F1CF9D3B7006FD0C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2A342E1CF9D3B7006FD0C5 /* Assets.xcassets */; };
 		BE2A34321CF9D3B7006FD0C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2A34301CF9D3B7006FD0C5 /* LaunchScreen.storyboard */; };
 		BE2A343A1CFA05B5006FD0C5 /* ngamy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE2A34391CFA05B5006FD0C5 /* ngamy.jpg */; };
+		BE5BA1F11CFB38B5003A18EE /* View2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5BA1EF1CFB38B5003A18EE /* View2ViewController.m */; };
+		BE5BA1F21CFB38B5003A18EE /* View2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5BA1F01CFB38B5003A18EE /* View2ViewController.xib */; };
+		BE76AEA71CFAB14A001E4B88 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE76AEA61CFAB14A001E4B88 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,10 @@
 		BE2A34311CF9D3B7006FD0C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE2A34331CF9D3B7006FD0C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2A34391CFA05B5006FD0C5 /* ngamy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ngamy.jpg; path = ../../../Downloads/ngamy.jpg; sourceTree = "<group>"; };
+		BE5BA1EE1CFB38B5003A18EE /* View2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View2ViewController.h; sourceTree = "<group>"; };
+		BE5BA1EF1CFB38B5003A18EE /* View2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View2ViewController.m; sourceTree = "<group>"; };
+		BE5BA1F01CFB38B5003A18EE /* View2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View2ViewController.xib; sourceTree = "<group>"; };
+		BE76AEA61CFAB14A001E4B88 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +73,14 @@
 				BE2A34281CF9D3B7006FD0C5 /* ViewController.h */,
 				BE2A34291CF9D3B7006FD0C5 /* ViewController.m */,
 				BE2A342B1CF9D3B7006FD0C5 /* Main.storyboard */,
+				BE76AEA61CFAB14A001E4B88 /* ViewController.xib */,
 				BE2A342E1CF9D3B7006FD0C5 /* Assets.xcassets */,
 				BE2A34301CF9D3B7006FD0C5 /* LaunchScreen.storyboard */,
 				BE2A34331CF9D3B7006FD0C5 /* Info.plist */,
 				BE2A34221CF9D3B7006FD0C5 /* Supporting Files */,
+				BE5BA1EE1CFB38B5003A18EE /* View2ViewController.h */,
+				BE5BA1EF1CFB38B5003A18EE /* View2ViewController.m */,
+				BE5BA1F01CFB38B5003A18EE /* View2ViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -156,9 +167,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE76AEA71CFAB14A001E4B88 /* ViewController.xib in Resources */,
 				BE2A343A1CFA05B5006FD0C5 /* ngamy.jpg in Resources */,
 				BE2A34321CF9D3B7006FD0C5 /* LaunchScreen.storyboard in Resources */,
 				BE2A342F1CF9D3B7006FD0C5 /* Assets.xcassets in Resources */,
+				BE5BA1F21CFB38B5003A18EE /* View2ViewController.xib in Resources */,
 				BE2A342D1CF9D3B7006FD0C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5BA1F11CFB38B5003A18EE /* View2ViewController.m in Sources */,
 				BE2A342A1CF9D3B7006FD0C5 /* ViewController.m in Sources */,
 				BE2A34271CF9D3B7006FD0C5 /* AppDelegate.m in Sources */,
 				BE2A34241CF9D3B7006FD0C5 /* main.m in Sources */,
@@ -333,6 +347,7 @@
 				BE2A34381CF9D3B7006FD0C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

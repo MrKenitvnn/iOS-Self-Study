@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  UI
+//  XibSample
 //
-//  Created by ken on 5/28/16.
+//  Created by ken on 5/29/16.
 //  Copyright © 2016 ken. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "SecondViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,18 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-//    // dang ky fullScreen
-//    self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // dang ky viewcontroller nao mac dinh la file xib Viewcontroller!!!
-//    //uiViewcontroller quan ly man hinh nao
-//    UIViewController *controller=[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-//    // đăng ký gốc navigation nam tren viewcontroller nào
-//    UINavigationController *navigation=[[UINavigationController alloc] initWithRootViewController:controller];
-//    // dang ky man hinh dau tien cua window
-//    self.window.rootViewController=navigation;// các bạn có thể truyền trược tiếp controller vào tuy thế không có thanh navigation!
-//    // cho phep hien thi dau tien
-//    [self.window makeKeyWindow];
+    // dang ky fullScreen
+    self.window=[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // dang ky viewcontroller nao mac dinh la file xib Viewcontroller!!!
+    //uiViewcontroller quan ly man hinh nao
+    UIViewController *controller=[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    // đăng ký gốc navigation nam tren viewcontroller nào
+    UINavigationController *navigation=[[UINavigationController alloc] initWithRootViewController:controller];
+    // dang ky man hinh dau tien cua window
+    self.window.rootViewController=navigation;// các bạn có thể truyền trược tiếp controller vào tuy thế không có thanh navigation!
+    // cho phep hien thi dau tien
+    [self.window makeKeyWindow];
+    return YES;
     
     return YES;
 }
