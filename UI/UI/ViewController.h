@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "View2ViewController.h"
+#import "TableViewController.h"
 
 @interface ViewController : UIViewController
 
@@ -26,6 +27,8 @@
     IBOutlet UIButton *mButtonNight;
     IBOutlet UIButton *mButtonDay;
     IBOutlet UIButton *mButtonNext;
+    
+    IBOutlet UIButton *mButtonTable;
 }
 
 @property View2ViewController *controller;
@@ -36,7 +39,7 @@
 - (IBAction)onButtonNightClick:(id)sender;
 - (IBAction)onButtonDayClick:(id)sender;
 - (IBAction)onButtonNextClick:(id)sender;
-
+- (IBAction)onButtonTableViewClick:(id)sender;
 
 @end
 

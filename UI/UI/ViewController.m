@@ -79,6 +79,11 @@
     
 }
 
+- (IBAction)onButtonTableViewClick:(id)sender {
+    TableViewController *tbController = [[TableViewController alloc] init];
+    [self presentViewController:tbController animated:YES completion:nil];
+}
+
 
 
 
