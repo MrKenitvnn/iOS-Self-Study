@@ -12,6 +12,8 @@
 
 {
     IBOutlet UIButton *mButtonBack;
+    
+    IBOutlet UITableView *mTableView;
 }
 
 - (IBAction)onButtonBackClick:(id)sender;

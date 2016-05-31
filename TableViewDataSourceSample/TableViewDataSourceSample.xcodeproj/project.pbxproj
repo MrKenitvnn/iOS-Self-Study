@@ -13,6 +13,12 @@
 		A64520C51CFC3E1A00B72FB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64520C31CFC3E1A00B72FB5 /* Main.storyboard */; };
 		A64520C71CFC3E1A00B72FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64520C61CFC3E1A00B72FB5 /* Assets.xcassets */; };
 		A64520CA1CFC3E1A00B72FB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64520C81CFC3E1A00B72FB5 /* LaunchScreen.storyboard */; };
+		A64520D31CFC3ECB00B72FB5 /* XXDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A64520D21CFC3ECB00B72FB5 /* XXDataSource.m */; };
+		A64520D51CFC3F7000B72FB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64520D41CFC3F7000B72FB5 /* UIKit.framework */; };
+		A64520D71CFC3F7A00B72FB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64520D61CFC3F7A00B72FB5 /* Foundation.framework */; };
+		A64520D91CFC3F8300B72FB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64520D81CFC3F8300B72FB5 /* CoreGraphics.framework */; };
+		A64520E61CFC43D700B72FB5 /* SampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64520E51CFC43D700B72FB5 /* SampleCell.xib */; };
+		A64520E91CFC447500B72FB5 /* SampleViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A64520E81CFC447500B72FB5 /* SampleViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,14 @@
 		A64520C61CFC3E1A00B72FB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64520C91CFC3E1A00B72FB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64520CB1CFC3E1A00B72FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64520D11CFC3ECB00B72FB5 /* XXDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDataSource.h; sourceTree = "<group>"; };
+		A64520D21CFC3ECB00B72FB5 /* XXDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDataSource.m; sourceTree = "<group>"; };
+		A64520D41CFC3F7000B72FB5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A64520D61CFC3F7A00B72FB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A64520D81CFC3F8300B72FB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A64520E51CFC43D700B72FB5 /* SampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleCell.xib; sourceTree = "<group>"; };
+		A64520E71CFC447500B72FB5 /* SampleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewCell.h; sourceTree = "<group>"; };
+		A64520E81CFC447500B72FB5 /* SampleViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64520D91CFC3F8300B72FB5 /* CoreGraphics.framework in Frameworks */,
+				A64520D71CFC3F7A00B72FB5 /* Foundation.framework in Frameworks */,
+				A64520D51CFC3F7000B72FB5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				A64520B91CFC3E1A00B72FB5 /* TableViewDataSourceSample */,
+				A64520DA1CFC3F8E00B72FB5 /* Frameworks */,
 				A64520B81CFC3E1A00B72FB5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,25 +76,112 @@
 		A64520B91CFC3E1A00B72FB5 /* TableViewDataSourceSample */ = {
 			isa = PBXGroup;
 			children = (
-				A64520BD1CFC3E1A00B72FB5 /* AppDelegate.h */,
-				A64520BE1CFC3E1A00B72FB5 /* AppDelegate.m */,
-				A64520C01CFC3E1A00B72FB5 /* ViewController.h */,
-				A64520C11CFC3E1A00B72FB5 /* ViewController.m */,
-				A64520C31CFC3E1A00B72FB5 /* Main.storyboard */,
+				A64520DB1CFC415500B72FB5 /* Classes */,
+				A64520E01CFC42D700B72FB5 /* Resources */,
 				A64520C61CFC3E1A00B72FB5 /* Assets.xcassets */,
-				A64520C81CFC3E1A00B72FB5 /* LaunchScreen.storyboard */,
-				A64520CB1CFC3E1A00B72FB5 /* Info.plist */,
-				A64520BA1CFC3E1A00B72FB5 /* Supporting Files */,
 			);
 			path = TableViewDataSourceSample;
 			sourceTree = "<group>";
 		};
-		A64520BA1CFC3E1A00B72FB5 /* Supporting Files */ = {
+		A64520DA1CFC3F8E00B72FB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A64520D81CFC3F8300B72FB5 /* CoreGraphics.framework */,
+				A64520D61CFC3F7A00B72FB5 /* Foundation.framework */,
+				A64520D41CFC3F7000B72FB5 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A64520DB1CFC415500B72FB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A64520DE1CFC418C00B72FB5 /* Adapters */,
+				A64520DF1CFC41A000B72FB5 /* View */,
+				A64520DC1CFC415E00B72FB5 /* Application */,
+				A64520DD1CFC416F00B72FB5 /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		A64520DC1CFC415E00B72FB5 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				A64520BB1CFC3E1A00B72FB5 /* main.m */,
+				A64520BD1CFC3E1A00B72FB5 /* AppDelegate.h */,
+				A64520BE1CFC3E1A00B72FB5 /* AppDelegate.m */,
 			);
-			name = "Supporting Files";
+			name = Application;
+			sourceTree = "<group>";
+		};
+		A64520DD1CFC416F00B72FB5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A64520C01CFC3E1A00B72FB5 /* ViewController.h */,
+				A64520C11CFC3E1A00B72FB5 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A64520DE1CFC418C00B72FB5 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				A64520D11CFC3ECB00B72FB5 /* XXDataSource.h */,
+				A64520D21CFC3ECB00B72FB5 /* XXDataSource.m */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
+		A64520DF1CFC41A000B72FB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A64520E71CFC447500B72FB5 /* SampleViewCell.h */,
+				A64520E81CFC447500B72FB5 /* SampleViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A64520E01CFC42D700B72FB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A64520E21CFC433D00B72FB5 /* Images */,
+				A64520E31CFC435700B72FB5 /* Splits */,
+				A64520E11CFC433100B72FB5 /* Xibs */,
+				A64520E41CFC436600B72FB5 /* StoryBoard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A64520E11CFC433100B72FB5 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				A64520E51CFC43D700B72FB5 /* SampleCell.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		A64520E21CFC433D00B72FB5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A64520E31CFC435700B72FB5 /* Splits */ = {
+			isa = PBXGroup;
+			children = (
+				A64520CB1CFC3E1A00B72FB5 /* Info.plist */,
+			);
+			name = Splits;
+			sourceTree = "<group>";
+		};
+		A64520E41CFC436600B72FB5 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A64520C31CFC3E1A00B72FB5 /* Main.storyboard */,
+				A64520C81CFC3E1A00B72FB5 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64520CA1CFC3E1A00B72FB5 /* LaunchScreen.storyboard in Resources */,
+				A64520E61CFC43D700B72FB5 /* SampleCell.xib in Resources */,
 				A64520C71CFC3E1A00B72FB5 /* Assets.xcassets in Resources */,
 				A64520C51CFC3E1A00B72FB5 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A64520E91CFC447500B72FB5 /* SampleViewCell.m in Sources */,
+				A64520D31CFC3ECB00B72FB5 /* XXDataSource.m in Sources */,
 				A64520C21CFC3E1A00B72FB5 /* ViewController.m in Sources */,
 				A64520BF1CFC3E1A00B72FB5 /* AppDelegate.m in Sources */,
 				A64520BC1CFC3E1A00B72FB5 /* main.m in Sources */,

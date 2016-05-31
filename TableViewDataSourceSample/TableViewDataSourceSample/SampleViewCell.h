@@ -10,4 +10,6 @@
 
 @interface SampleViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *mLabelTitle;
+
 @end

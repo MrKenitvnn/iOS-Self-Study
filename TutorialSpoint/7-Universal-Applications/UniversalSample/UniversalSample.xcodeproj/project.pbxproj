@@ -13,6 +13,8 @@
 		A643CA261CF8562200AE210C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A643CA241CF8562200AE210C /* Main.storyboard */; };
 		A643CA281CF8562200AE210C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A643CA271CF8562200AE210C /* Assets.xcassets */; };
 		A643CA2B1CF8562200AE210C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A643CA291CF8562200AE210C /* LaunchScreen.storyboard */; };
+		A643CA331CF8564A00AE210C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A643CA321CF8564A00AE210C /* ViewController_iPad.xib */; };
+		A643CA351CF8566F00AE210C /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A643CA341CF8566F00AE210C /* ViewController_iPhone.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A643CA271CF8562200AE210C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A643CA2A1CF8562200AE210C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A643CA2C1CF8562200AE210C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A643CA321CF8564A00AE210C /* ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPad.xib; sourceTree = "<group>"; };
+		A643CA341CF8566F00AE210C /* ViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPhone.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				A643CA291CF8562200AE210C /* LaunchScreen.storyboard */,
 				A643CA2C1CF8562200AE210C /* Info.plist */,
 				A643CA1B1CF8562200AE210C /* Supporting Files */,
+				A643CA321CF8564A00AE210C /* ViewController_iPad.xib */,
+				A643CA341CF8566F00AE210C /* ViewController_iPhone.xib */,
 			);
 			path = UniversalSample;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			files = (
 				A643CA2B1CF8562200AE210C /* LaunchScreen.storyboard in Resources */,
 				A643CA281CF8562200AE210C /* Assets.xcassets in Resources */,
+				A643CA331CF8564A00AE210C /* ViewController_iPad.xib in Resources */,
 				A643CA261CF8562200AE210C /* Main.storyboard in Resources */,
+				A643CA351CF8566F00AE210C /* ViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

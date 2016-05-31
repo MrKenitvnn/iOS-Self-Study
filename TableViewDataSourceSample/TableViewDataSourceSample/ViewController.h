@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XXDataSource.h"
+#import "SampleViewCell.h"
 
 @interface ViewController : UIViewController
 
+{
+    IBOutlet UITableView *mTableView;
+
+}
 
 @end
+
+
+
 

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "View2ViewController.h"
 #import "TableViewController.h"
+#import "SampleTabbarViewController.h"
 
 @interface ViewController : UIViewController
 
@@ -27,8 +28,10 @@
     IBOutlet UIButton *mButtonNight;
     IBOutlet UIButton *mButtonDay;
     IBOutlet UIButton *mButtonNext;
-    
     IBOutlet UIButton *mButtonTable;
+    
+    IBOutlet UIButton *mButtonTabView;
+    
 }
 
 @property View2ViewController *controller;
@@ -40,6 +43,7 @@
 - (IBAction)onButtonDayClick:(id)sender;
 - (IBAction)onButtonNextClick:(id)sender;
 - (IBAction)onButtonTableViewClick:(id)sender;
+- (IBAction)onButtonTabViewClick:(id)sender;
 
 @end
 

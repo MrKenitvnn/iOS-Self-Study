@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     labelSex.text = [segmentSex
                      titleForSegmentAtIndex:segmentSex.selectedSegmentIndex];
@@ -82,6 +84,11 @@
 - (IBAction)onButtonTableViewClick:(id)sender {
     TableViewController *tbController = [[TableViewController alloc] init];
     [self presentViewController:tbController animated:YES completion:nil];
+}
+
+- (IBAction)onButtonTabViewClick:(id)sender {
+    SampleTabbarViewController *tvController = [[SampleTabbarViewController alloc] init];
+    [self presentViewController:tvController animated:YES completion: nil];
 }
 
 

@@ -23,6 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    [mTableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     mListLanguages = [NSArray arrayWithObjects:@"Pascal", @"C/C++", @"C#", @"Java", @"Objective-C", @"Swift", @"Haskell", @"PHP", @"JavaScript", @"Ruby, "@"Python", @"Scala", nil];
     
@@ -34,20 +36,19 @@
     [item setAppIcon:@"ngamy.jpg"];
     [mListPromoteApps addObject:item];
     
-    //PromoteApp *item2 = [[PromoteApp alloc] init];
-    [item setAppName:@"Bá Vương"];
-    [item setAppInviteText:@"Chiến Ngay"];
-    [item setAppIcon:@"ngamy.jpg"];
-    [mListPromoteApps addObject:item];
+    PromoteApp *item2 = [[PromoteApp alloc] init];
+    [item2 setAppName:@"Bá Vương"];
+    [item2 setAppInviteText:@"Chiến Ngay"];
+    [item2 setAppIcon:@"ngamy.jpg"];
+    [mListPromoteApps addObject:item2];
     
-    //PromoteApp *item3 = [[PromoteApp alloc] init];
-    [item setAppName:@"Đảo Hải Tặc"];
-    [item setAppInviteText:@"Chiến Ngay"];
-    [item setAppIcon:@"ngamy.jpg"];
-    [mListPromoteApps addObject:item];
+    PromoteApp *item3 = [[PromoteApp alloc] init];
+    [item3 setAppName:@"Đảo Hải Tặc"];
+    [item3 setAppInviteText:@"Chiến Ngay"];
+    [item3 setAppIcon:@"ngamy.jpg"];
+    [mListPromoteApps addObject:item3];
     
     //mListPromoteApps = [NSMutableArray arrayWithObjects: item, item2, item3, nil];
-    
     NSLog(@"%@", [mListPromoteApps[0] getAppName]);
     NSLog(@"%@", [mListPromoteApps[1] getAppName]);
     NSLog(@"%@", [mListPromoteApps[2] getAppName]);
@@ -76,8 +77,6 @@
 - (UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *simpleTableIdentifier = @"Simple Table Cell";
     PromoteApp *item = [mListPromoteApps objectAtIndex:indexPath.row];
-    
-    NSLog(@"index:%d, item: %@", indexPath.row ,[item getAppName]);
     
 //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
@@ -112,7 +111,7 @@
 }
 
 - (CGFloat) tableView: (UITableView *) tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    return 78;
+    return 70;
 }
 
 
