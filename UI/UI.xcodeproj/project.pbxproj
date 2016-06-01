@@ -13,6 +13,7 @@
 		A61E65BD1CFD2ADE00942B9E /* SamplerTabber2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E65BB1CFD2ADE00942B9E /* SamplerTabber2ViewController.xib */; };
 		A61E65C11CFD2AF500942B9E /* SampleTabbar1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E65BF1CFD2AF500942B9E /* SampleTabbar1ViewController.m */; };
 		A61E65C21CFD2AF500942B9E /* SampleTabbar1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E65C01CFD2AF500942B9E /* SampleTabbar1ViewController.xib */; };
+		A644A5E71CFE7E28005E5582 /* mygconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A644A5E61CFE7E28005E5582 /* mygconfig.plist */; };
 		A64520931CFBD1D600B72FB5 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64520911CFBD1D600B72FB5 /* TableViewController.m */; };
 		A64520941CFBD1D600B72FB5 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64520921CFBD1D600B72FB5 /* TableViewController.xib */; };
 		A64520981CFBE6E700B72FB5 /* TableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A64520961CFBE6E700B72FB5 /* TableCellTableViewCell.m */; };
@@ -41,6 +42,7 @@
 		A61E65BE1CFD2AF500942B9E /* SampleTabbar1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTabbar1ViewController.h; sourceTree = "<group>"; };
 		A61E65BF1CFD2AF500942B9E /* SampleTabbar1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTabbar1ViewController.m; sourceTree = "<group>"; };
 		A61E65C01CFD2AF500942B9E /* SampleTabbar1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTabbar1ViewController.xib; sourceTree = "<group>"; };
+		A644A5E61CFE7E28005E5582 /* mygconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mygconfig.plist; sourceTree = "<group>"; };
 		A64520901CFBD1D600B72FB5 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = UI/TableViewController.h; sourceTree = "<group>"; };
 		A64520911CFBD1D600B72FB5 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = UI/TableViewController.m; sourceTree = "<group>"; };
 		A64520921CFBD1D600B72FB5 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewController.xib; path = UI/TableViewController.xib; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		BE2A34161CF9D3B7006FD0C5 = {
 			isa = PBXGroup;
 			children = (
+				A644A5E61CFE7E28005E5582 /* mygconfig.plist */,
 				A6A5BA931CFD8745002FA648 /* Default-568h@2x.png */,
 				BE2A342E1CF9D3B7006FD0C5 /* Assets.xcassets */,
 				BE2A34301CF9D3B7006FD0C5 /* LaunchScreen.storyboard */,
@@ -284,6 +287,7 @@
 				A6A5BA941CFD8745002FA648 /* Default-568h@2x.png in Resources */,
 				A61E65B81CFD285300942B9E /* SampleTabbarViewController.xib in Resources */,
 				A61E65BD1CFD2ADE00942B9E /* SamplerTabber2ViewController.xib in Resources */,
+				A644A5E71CFE7E28005E5582 /* mygconfig.plist in Resources */,
 				BE2A342F1CF9D3B7006FD0C5 /* Assets.xcassets in Resources */,
 				BE5BA1F21CFB38B5003A18EE /* View2ViewController.xib in Resources */,
 				A64520AD1CFC3CBB00B72FB5 /* ngamy.jpg in Resources */,

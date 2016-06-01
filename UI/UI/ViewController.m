@@ -31,6 +31,28 @@
     
     [mImageView setImage:[UIImage imageNamed:@"ngamy.jpg"]];
     
+    
+    #pragma JSON sample
+    NSDictionary *person = @{@"first_name":@"Ken", @"age":@23};
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:person options:NSJSONWritingPrettyPrinted error:nil];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSLog(@"json: %@", jsonString);
+    
+    // convert json to nsdictionary
+    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:nil];
+    [jsonObject valueForKey:@"first_name"];
+    
+    #pragma file .plist
+    NSString *pathPlist = [[NSBundle mainBundle] pathForResource:@"mygconfig" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:pathPlist];
+    
+    NSMutableArray *listLanguages = [dict objectForKey:@"languages"];
+    NSString *client_id = [dict objectForKey:@"client_id"];
+    NSLog(@"client id: %@", client_id);
+    for (int i=0; i<[listLanguages count]; i++) {
+        NSLog(@"%@", listLanguages[i]);
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,7 +79,7 @@
 }
 
 
-#pragma Slider - giống cái Progressbar trong Android
+#pragma Slider - giống cái Seekbar trong Android
 - (IBAction) onSliderPriceChanged: (id)sender {
     float newStep = roundf((sliderPrice.value) / stepValue);
     sliderPrice.value = newStep * stepValue;

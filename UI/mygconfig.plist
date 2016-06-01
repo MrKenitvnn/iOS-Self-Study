@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>languages</key>
+	<array>
+		<string>PHP</string>
+		<string>Java</string>
+		<string>C/C++</string>
+	</array>
+	<key>client_id</key>
+	<string>hsjKUWYKSHDjscnkWUYUEihDJKShdjschkaJDSAKJ</string>
+	<key>fb_id</key>
+	<string>1106844560222</string>
+</dict>
+</plist>
