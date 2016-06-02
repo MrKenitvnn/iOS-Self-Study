@@ -35,7 +35,7 @@
 
 // hoặc sử dụng @synchronized
 + (id) getInstance {
-    static DataManager mInstance = nil;
+    static DataManager *mInstance = nil;
     @synchronized (self) {
         if (!mInstance)
             mInstance = [[self alloc] init];
