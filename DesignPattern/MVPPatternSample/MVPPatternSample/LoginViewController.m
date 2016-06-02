@@ -27,6 +27,7 @@
     
     presenter = [[LoginPresenter alloc] initWithView:self];
     
+    NSLog(@"LoginViewController : viewDidLoad");
     [presenter requestLoginWithUsername:@"the username" AndPassword:@"the password"];
 }
 
