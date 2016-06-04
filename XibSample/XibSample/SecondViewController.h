@@ -10,4 +10,12 @@
 
 @interface SecondViewController : UIViewController
 
+{
+
+    IBOutlet UIButton *buttonBack;
+}
+
+- (IBAction)onButtonBackTap:(id)sender;
+
+
 @end
